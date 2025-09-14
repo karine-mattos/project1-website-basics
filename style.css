@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 /* Root typography settings */
 html{
 /*   set the following properties: 
@@ -6,25 +7,95 @@ html{
   line-height - base line height, generally should be in the range 1.5-1.8 
   color- primary text color for the site
   background-color - primary background color for the site */
+/* Base font */
+font-family: "Source Sans 3", sans-serif;
+font-size: 18px;  
+}
 
-  
+body{
+  color: #373D20;
+  background-color: #BCBD8B;
+  line-height: 1.5;
+  width: 90ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* General heading styles */
-h1, h2, h3, h4, h5, h6{
-  set font styles for all of your headings, for example font-weight, line-height, font-family
+h1 ,h2, h3, h4, h5, h6{
+/* set font styles for all of your headings, for example font-weight, line-height, font-family */
+font-family: "Playfair Display";
+font-size: 28px;
+font-style: normal;
 }
 
 /* Specific element text styles */
 h1{
   /*   this is the page title */
+color:#373D20;
+font-family: Playfair;
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.0;
+letter-spacing: -2px;
 }
 
-h2{
-  
+h2{ 
+line-height: 1.5;
 }
 
 p{
-
-  margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
+margin-bottom: 1rem;
+/* optional but usually good to have a space between paragraphs */
 }
+
+a{
+color: #504137;
+}
+
+a:hover{
+color: #EFF1ED;
+}
+
+a:visited{
+color: #717744;  
+}
+
+/* -------------  Header styles ------------------------- */
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: center;           /* vertical centering */
+  padding: 1rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #504137;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #EFF1ED; /* hover color */
+}
+
+nav a:visited{
+color: #504137;  
+}
+
+/* ------------- END Header styles  */
